@@ -1,0 +1,190 @@
+{
+  "cake": [
+    {
+      "id": 2,
+      "name": "Step Cake",
+      "price": 1000,
+      "imageurl": "../../assets/step.jpg",
+      "categories": "Cake With Egg",
+      "description": "'Should look beautiful and taste divine.'"
+    },
+    {
+      "id": 3,
+      "name": "Cup Cake",
+      "price": 200,
+      "imageurl": "../../assets/ccupcakes.jpg",
+      "categories": "Cake With Egg",
+      "description": "'Small cake designed to serve one person, which may be baked in a small thin paper or aluminum cup.'"
+    },
+    {
+      "id": 4,
+      "name": "Anniversary Cake",
+      "price": 700,
+      "imageurl": "../../assets/Anniversary Cake.jpg",
+      "categories": "Cake With Egg",
+      "description": "'A Celebration of Love.'"
+    },
+    {
+      "id": 5,
+      "name": "Fruit Cake",
+      "price": 1300,
+      "imageurl": "../../assets/Fruit Cake.jpg",
+      "categories": "Cake With Egg",
+      "description": "'A cake made with candied or dried fruit, nuts, and spices, and optionally soaked in spirits.'"
+    },
+    {
+      "id": 6,
+      "name": "Blue Berry Cake",
+      "price": 1000,
+      "imageurl": "../../assets/Blue Berry Cake.jpg",
+      "categories": "Cake With Egg",
+      "description": "'A soft tender layer cake that tastes of wild blueberries, filled with a blueberry compote and wrapped in a sweet, blueberry buttercream.'"
+    },
+    {
+      "id": 7,
+      "name": "Monster Theme Cake",
+      "price": 2000,
+      "imageurl": "../assets/Monster  Cake.jpg",
+      "categories": "Cake With Egg",
+      "description": "'Covered in buttercream cake with 3D fondant figurine on the top of the cake.'"
+    },
+    {
+      "id": 8,
+      "name": "Cherry Jelly Cake",
+      "price": 1500,
+      "imageurl": "../../assets/Cherry cake.jpg",
+      "categories": "Cake With Egg",
+      "description": "'This dessert is made with a subtle vanilla cream, fresh cherries and is covered by chocolate. Made by Dan Dessert's special recipe.'"
+    },
+    {
+      "id": 9,
+      "name": "Black Forest Cake",
+      "price": 1200,
+      "imageurl": "../../assets/Blackforest Cake.jpeg",
+      "categories": "Cake With Egg",
+      "description": "'Layers of chocolate sponge with whipped cream frosting and delicious cherries filling.'"
+    },
+    {
+      "id": 10,
+      "name": "Ice Cream Cake",
+      "price": 1900,
+      "imageurl": "../../assets/ice-cream.jpg",
+      "categories": "Cake With Egg",
+      "description": "'Cake with ice cream as the filling for a swiss roll or a layer cake.'"
+    },
+    {
+      "id": 11,
+      "name": "Jelly Fruit Cake",
+      "price": 1800,
+      "imageurl": "../../assets/jelly-fruit-cake.jpg",
+      "categories": "Eg-less Cake",
+      "description": "'With a variety of strawberries, lychees and blueberries in the middle layer of the cake, taste them in between the yellow layers of condensed milk flavoured jelly.'"
+    },
+    {
+      "id": 12
+    },
+    {
+      "id": 13
+    }
+  ],
+  "userModel": [
+    {
+      "username": "aaaaa",
+      "emailiD": "arun@gmail.com",
+      "phoneNo": "1212121212",
+      "role": "user",
+      "password": "Arun",
+      "confirmpassword": "Arun",
+      "address": "Ambur",
+      "pincode": "121212",
+      "id": 1
+    },
+    {
+      "username": "Arun",
+      "emailiD": "arunprasadv129@gmail.com",
+      "phoneNo": "6382515558",
+      "role": "admin",
+      "password": "Arun11",
+      "confirmpassword": "Arun11",
+      "address": "Ambur",
+      "pincode": "635802",
+      "id": 2
+    },
+    {
+      "username": "Vijay",
+      "emailiD": "vijay@gmail.com",
+      "phoneNo": "3696258245",
+      "role": "user",
+      "password": "Vijay",
+      "confirmpassword": "Vijay",
+      "address": "Chennai",
+      "pincode": "635211",
+      "id": 3
+    },
+    {
+      "username": "Mukesh",
+      "emailiD": "mukesh@gmail.com",
+      "phoneNo": "6325151558",
+      "role": "user",
+      "password": "Mukesh",
+      "confirmpassword": "Mukesh",
+      "address": "Chennai",
+      "pincode": "121121",
+      "id": 4
+    }
+  ],
+  "orderDetails": [
+    {
+      "emailID": "vijay@gmail.com",
+      "catagories": "Cake With Egg",
+      "price": 200,
+      "name": "aaaaaa",
+      "address": "aaaaaaaaaaaa",
+      "phoneno": "121212",
+      "pincode": "121212",
+      "Quantity": 44,
+      "deliveryDate": "2311-12-22",
+      "imageurl": "../../assets/ccupcakes.jpg",
+      "id": 1
+    },
+    {
+      "emailID": "vijay@gmail.com",
+      "catagories": "Cake With Egg",
+      "price": 200,
+      "name": "aaaaaaaaaaa",
+      "address": "aaaa",
+      "phoneno": "121212",
+      "pincode": "121212",
+      "Quantity": 2,
+      "deliveryDate": "2023-12-25",
+      "imageurl": "../../assets/ccupcakes.jpg",
+      "id": 2
+    },
+    {
+      "emailID": "vijay@gmail.com",
+      "catagories": "Cake With Egg",
+      "price": 200,
+      "name": "ssss",
+      "address": "sss",
+      "phoneno": "121212",
+      "pincode": "121212",
+      "Quantity": 2,
+      "deliveryDate": "2023-12-25",
+      "imageurl": "../../assets/ccupcakes.jpg",
+      "id": 3
+    },
+    {
+      "emailID": "vijay@gmail.com",
+      "catagories": "Cake With Egg",
+      "price": 200,
+      "name": "ssss",
+      "address": "sss",
+      "phoneno": "121212",
+      "pincode": "121212",
+      "Quantity": 2,
+      "deliveryDate": "2023-12-25",
+      "imageurl": "../../assets/ccupcakes.jpg",
+      "id": 4
+    }
+  ]
+}
