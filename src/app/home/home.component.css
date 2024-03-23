@@ -1,0 +1,59 @@
+.grid-container {
+  margin: 20px;
+
+}
+
+.dashboard-card {
+  position: absolute;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+ color:hotpink;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: center;
+  color:blanchedalmond;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  font-size: x-large;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+ }
+ 
+ .grid-container > div {
+  display: flex;
+  align-items: center;
+ }
+ 
+ input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+  margin-right: 10px;
+  width: 200px; 
+
+ }
+ 
+ button {
+  padding: 10px 16px;
+  font-size: 16px;
+ 
+  color: blue;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+ }
+ 

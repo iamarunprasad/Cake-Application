@@ -1,0 +1,12 @@
+.order {
+    width: 400px;
+    height: auto;
+    padding: 20px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px auto;
+    border: 1px solid black;
+}

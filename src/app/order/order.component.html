@@ -1,0 +1,77 @@
+<div class="order">
+    <div class="oneview">
+        <div class="image">
+            <img src="{{mycakes.imageurl}}">
+        </div>
+        <div class="details">
+            <p class="name">{{mycakes.name}}</p>
+            <p class="price">$ {{mycakes.price}}/kg</p>
+            <p class="cat">{{mycakes.categories}}</p>
+            <p class="desp">{{mycakes.description}}</p>
+        </div>
+    </div>
+    <div class="orderformpage">
+        <div>
+            <mat-form-field class="example-full-width" style="margin-bottom: -10px;width: 600px;">
+                <mat-label>User Name</mat-label>
+                <input matInput type="text" [(ngModel)]="myorderinfo.name" #username="ngModel" name="order.name"
+                    required minlength="4" pattern="[A-Za-z]*">
+                <div *ngIf="username?.touched">
+                    <mat-error *ngIf="username?.errors?.['required']">User Name is Mandatory</mat-error>
+                    <mat-error *ngIf="username?.errors?.['minlength']">User Name should be more than 4
+                        characters</mat-error>
+                    <mat-error *ngIf="username?.errors?.['pattern']">User Name should be only alphabets</mat-error>
+                </div>
+            </mat-form-field>
+        </div>
+
+        <div>
+            <mat-form-field class="example-full-width" style="margin-bottom: -10px;width: 600px;">
+                <mat-label>Address of Current Location</mat-label>
+                <input matInput [(ngModel)]="myorderinfo.address" #address="ngModel" required>
+                <div *ngIf="address?.touched">
+                    <mat-error *ngIf="address?.errors?.['required']">address is Mandatory</mat-error>
+                </div>
+            </mat-form-field>
+        </div>
+
+        <div>
+            <mat-form-field class="example-full-width" style="margin-bottom: -10px;width: 600px;">
+                <mat-label>Mobile No</mat-label>
+                <input matInput [(ngModel)]="myorderinfo.phoneno" pattern="[0-9]{6}" #phoneno="ngModel" required>
+                <div *ngIf="phoneno?.touched">
+                    <mat-error *ngIf="phoneno?.errors?.['required']">phoneNo is Mandatory</mat-error>
+                </div>
+            </mat-form-field>
+        </div>
+
+
+
+
+        <div>
+            <mat-form-field class="example-full-width" style="margin-bottom: -10px;width: 600px;">
+                <mat-label>Pin-Code</mat-label>
+                <input matInput [(ngModel)]="myorderinfo.pincode" #pincode="ngModel" required pattern="[0-9]{6}">
+                <div *ngIf="pincode?.touched">
+                    <mat-error *ngIf="pincode?.errors?.['required']">Pin-Code is Mandatory</mat-error>
+
+                    <mat-error *ngIf="pincode?.errors?.['pattern']">Pin-Code should be only numeric</mat-error>
+                </div>
+            </mat-form-field>
+        </div>
+        <div>
+            <div class="quantity-container">
+                <label>Quantity</label>
+                <input type="number" [(ngModel)]="myorderinfo.Quantity">
+            </div>
+
+            <div class="date-container">
+                <label>Date of Order</label>
+                <input type="date" [(ngModel)]="myorderinfo.deliveryDate">
+            </div>
+
+            <button class="placeorderbutton" type="submit" (click)="addplaceorderdetails()"
+                [routerLink]="'/ordersummary'">Buy Now</button>
+
+        </div>
+    </div>

@@ -1,0 +1,39 @@
+<h1 style="margin: 10px 10px; color: antiquewhite;">Customer Order Details</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Product</th>
+      <th>Price Amount</th>
+      <th>Delivery Date</th>
+      <th>User Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let orderdetails of customerorder">
+      <td>
+        <div style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+          <img [src]="orderdetails.imageurl" width="100px" height="100px" alt="">
+          <div style="margin-left: 30px;">
+            <p>{{orderdetails.catagories}}</p>
+
+          </div>
+        </div>
+      </td>
+      <td>
+        <h2 style="text-align: center;">${{orderdetails.price}}</h2>
+      </td>
+      <td>
+        <h2>{{orderdetails.deliveryDate}}</h2>
+      </td>
+      <td>
+        <div style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+          <p>{{orderdetails.name}}</p>
+          <p>{{orderdetails.emailID}}</p>
+          <p>{{orderdetails.phoneno}}</p>
+          <p>{{orderdetails.pincode}}</p>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+
+</table>

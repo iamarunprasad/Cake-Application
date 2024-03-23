@@ -1,0 +1,91 @@
+<div class="register-form">
+    <form [formGroup]="userModel" class="example-form" (ngSubmit)="addUsers()">
+        <h1 id="regis-Head">Sign Up</h1>
+        <div>
+            <mat-form-field class="example-full-width" style="margin-bottom: -10px;">
+                <mat-label>User Name</mat-label>
+                <input matInput formControlName="username">
+                <div *ngIf="username?.touched">
+                    <mat-error *ngIf="username?.errors?.['required']">User Name is Mandatory</mat-error>
+                    <mat-error *ngIf="username?.errors?.['minlength']">User Name should be more than 4
+                        characters</mat-error>
+                    <mat-error *ngIf="username?.errors?.['pattern']">User Name should be only alphabets</mat-error>
+                </div>
+            </mat-form-field>
+        </div>
+
+        <div>
+            <mat-form-field class="example-full-width" style="margin-bottom: -10px;">
+                <mat-label>E-Mail Id</mat-label>
+                <input matInput formControlName="emailiD">
+                <div *ngIf="emailiD?.touched">
+                    <mat-error *ngIf="emailiD?.errors?.['required']">E-Mail Id is Mandatory</mat-error>
+                </div>
+            </mat-form-field>
+        </div>
+
+        <div>
+            <mat-form-field class="example-full-width" style="margin-bottom: -10px;">
+                <mat-label>Password</mat-label>
+                <i [ngClass]="visible ? 'fa fa-eye' : 'fa fa-eye-slash'" (click)="togglePasswordVisibility()"></i>
+                <input type="{{visible ? 'text' : 'password'}}" matInput formControlName="password">
+                <div *ngIf="password?.touched">
+                    <mat-error *ngIf="password?.errors?.['required']">Password Is Mandatory </mat-error>
+                </div>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field class="example-full-width" style="margin-bottom: -10px;">
+                <mat-label>Confirm Password</mat-label>
+                <i [ngClass]="visible ? 'fa fa-eye' : 'fa fa-eye-slash'" (click)="togglePasswordVisibility()"></i>
+                <input type="{{visible ? 'text' : 'password'}}" matInput formControlName="confirmpassword">
+                <div *ngIf="confirmpassword?.touched">
+                    <mat-error *ngIf="confirmpassword?.errors?.['required']">Confirm Password is Mandatory </mat-error>
+                    <mat-error *ngIf="confirmpassword?.dirty && userModel?.errors?.['passerror']">Password and Confirm
+                        Password
+                        Does't Matches, Please Retry </mat-error>
+                </div>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field class="example-full-width" style="margin-bottom: -10px;">
+                <mat-label>Mobile No</mat-label>
+                <input matInput formControlName="phoneNo">
+                <div *ngIf="phoneNo?.touched">
+                    <mat-error *ngIf="phoneNo?.errors?.['required']">Mobile No is Mandatory</mat-error>
+                </div>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field class="example-full-width" style="margin-bottom: -10px;">
+                <mat-label>Address of Current Location</mat-label>
+                <input matInput formControlName="address">
+                <div *ngIf="address?.touched">
+                    <mat-error *ngIf="address?.errors?.['required']">address is Mandatory</mat-error>
+                </div>
+            </mat-form-field>
+        </div>
+
+        <input type="hidden" formControlName="role" value="role">
+
+
+        <div>
+            <mat-form-field class="example-full-width" style="margin-bottom: -10px;">
+                <mat-label>Pin-Code</mat-label>
+                <input matInput formControlName="pincode">
+                <div *ngIf="pincode?.touched">
+                    <mat-error *ngIf="pincode?.errors?.['required']">Pin-Code is Mandatory</mat-error>
+
+                    <mat-error *ngIf="pincode?.errors?.['pattern']">Pin-Code should be only Numeric</mat-error>
+                </div>
+            </mat-form-field>
+        </div>
+
+        <div class="example-button-row">
+
+            <button style="margin: 5px;background-color: rgb(25, 25, 201);" mat-raised-button type="submit"
+                [disabled]="userModel.invalid">Submit</button>
+            <button style="margin: 5px;" mat-raised-button color="accent" type="reset">Clear</button>
+        </div>
+    </form>
+</div>

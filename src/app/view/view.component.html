@@ -1,0 +1,15 @@
+<div class="view">
+    <div class="images">
+        <img src="{{mycakes.imageurl}}" width="50%" height="50%">
+    </div>
+
+
+    <div class="details">
+        <p class="name">{{mycakes.name}}</p>
+        <p class="price">${{mycakes.price}}/kg</p>
+        <p class="categories">{{mycakes.categories}}</p>
+        <p class="Description">{{mycakes.description}}</p>
+
+    </div>
+    <a id="viewonebutton" type="" [routerLink]="'/order/' + mycakes.id" *ngIf="logserv.isUser">Buy now</a>
+</div>

@@ -1,0 +1,50 @@
+.example-form {
+  max-width: 4 00px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.example-full-width {
+  width: 50%;
+}
+
+mat-form-field {
+  display: block;
+}
+
+button {
+  margin-top: 15px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.grid-container>div {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 16px;
+  background-color: aqua;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

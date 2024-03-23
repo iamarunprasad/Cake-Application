@@ -1,0 +1,38 @@
+
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+  background-color: #333; 
+  color: #fff;
+}
+
+mat-nav-list a {
+  color: #fff;
+}
+
+mat-nav-list a:hover {
+  background-color: #555; 
+}
+
+mat-toolbar {
+  background-color: deeppink; 
+  color: #fff; 
+  display: flex;
+  justify-content: space-between;
+}
+
+mat-icon {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: paleturquoise;
+}

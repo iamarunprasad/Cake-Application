@@ -1,0 +1,27 @@
+<div class="example-form">
+
+    <mat-form-field class="example-full-width" *ngIf="isEditCake">
+        <mat-label>Enter Id No</mat-label>
+        <input matInput placeholder="Give Id" value="" [(ngModel)]="mycakes.id "readonly="">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Enter Price Amount of product</mat-label>
+        <input matInput placeholder="Give Price" value="" [(ngModel)]="mycakes.price">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Enter Image Url of product</mat-label>
+        <input matInput placeholder="Give Image" value="" [(ngModel)]="mycakes.imageurl">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Enter Description of product</mat-label>
+        <input matInput placeholder=" Give Description" value="" [(ngModel)]="mycakes.description">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Enter Catagory of product</mat-label>
+        <input matInput placeholder="Give Catagory" value="" [(ngModel)]="mycakes.categories">
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="addNewCake()">Add Cake</button>
+</div>

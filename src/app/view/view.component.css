@@ -1,0 +1,67 @@
+.oneview {
+    margin: 50px auto;
+}
+
+.imageurl {
+
+    width: 300px;
+    height: 100px;
+    float: left;
+
+
+}
+
+.viewonebutton {
+    margin-left: 250px;
+}
+
+.details {
+    padding: 50px;
+}
+
+.price {
+
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: blanchedalmond;
+}
+
+.name {
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: goldenrod
+}
+
+.categories {
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: blanchedalmond;
+}
+
+.Description {
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: blanchedalmond;
+}
+
+a#viewonebutton {
+
+    display: block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+a#viewonebutton:hover {
+    background-color: #2980b9;
+
+}

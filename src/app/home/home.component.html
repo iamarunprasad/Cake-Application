@@ -1,0 +1,33 @@
+<div class="grid-container">
+  <div>
+    <input [(ngModel)]="search">
+    <button (click)="searchBar()">Search</button>
+  </div>
+  <h1 class="mat-h1" style="font-family:'Times New Roman', Times, serif; color: aqua;">Welcome!!!</h1>
+  <mat-grid-list cols="3" rowHeight="350px" id="mat-grid">
+    <mat-grid-tile *ngFor="let cakeview of cakedata">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <img src="{{ cakeview.imageurl }}" alt="Cake Image" width="250px" height="200px">
+            <mat-menu #menu="matMenu" xPosition="before">
+              <a mat-menu-item [routerLink]="'viewonecake/' + cakeview.id">View</a>
+              <a mat-menu-item [routerLink]="'editdetails/' + cakeview.id" *ngIf="logserv.isAdmin">Edit</a>
+              <button mat-menu-item type="button" (click)="deleteCake(cakeview.id)"
+                *ngIf="logserv.isAdmin">Delete</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div class="content">
+            <p class="Cakes Store">{{ cakeview.name }}</p>
+            <p class="Price Amount ">$ {{ cakeview.price }}/kg</p>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
