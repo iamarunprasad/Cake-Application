@@ -102,12 +102,12 @@
     {
       "username": "Arun",
       "emailiD": "arunprasadv129@gmail.com",
-      "phoneNo": "6382515558",
+      "phoneNo": "1212121212",
       "role": "admin",
       "password": "Arun11",
       "confirmpassword": "Arun11",
       "address": "Ambur",
-      "pincode": "635802",
+      "pincode": "633434",
       "id": 2
     },
     {
@@ -124,7 +124,7 @@
     {
       "username": "Mukesh",
       "emailiD": "mukesh@gmail.com",
-      "phoneNo": "6325151558",
+      "phoneNo": "6321234555",
       "role": "user",
       "password": "Mukesh",
       "confirmpassword": "Mukesh",
